@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Workout App</title>
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+  </head>
+  <body class="container">
+    <br>
+    <div class="card-body">
+      <div class="row">
+        <div class="col-sm">
+          <div class="form-group">
+            <label for="new-exercise">Exercise</label>
+            <input
+              type="text"
+              class="form-control"
+              id="new-exercise"
+              placeholder="Name of Exercise"
+            />
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="form-group">
+            <label for="new-date">Date</label>
+            <input type="date" class="form-control" id="new-date" />
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm">
+          <div class="form-group">
+            <label for="new-set">Set</label>
+            <input
+              type="text"
+              class="form-control"
+              id="new-set"
+              placeholder="Number of Sets"
+            />
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="form-group">
+            <label for="new-rep">Rep</label>
+            <input
+              type="text"
+              class="form-control"
+              id="new-rep"
+              placeholder="Number of Reps"
+            />
+          </div>
+        </div>
+      </div>
+      <br>
+      <div>
+        <button id="add" class="btn btn-primary form-control">Create</button>
+      </div>
+      <br>
+    </div>
+
+    <table id="list" class="table table-dark table-striped">
+        <tr>
+            <th>Exercise</th>
+            <th>Sets</th>
+            <th>Reps</th>
+            <th>Date</th>
+            <th>Action</th>
+        </tr>
+
+    </table>
+  </body>
+  <script src="index.js"></script>
+  <script src="node_modules/jquery/dist/jquery.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</html>
